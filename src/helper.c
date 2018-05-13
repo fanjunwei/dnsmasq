@@ -104,7 +104,7 @@ int create_helper(int event_fd, int err_fd, uid_t uid, gid_t gid, long max_fd)
   sigemptyset(&sigact.sa_mask);
   sigaction(SIGTERM, &sigact, NULL);
   sigaction(SIGALRM, &sigact, NULL);
-  sigaction(SIGINT, &sigact, NULL);
+//  sigaction(SIGINT, &sigact, NULL);
 
   if (!option_bool(OPT_DEBUG) && uid != 0)
     {

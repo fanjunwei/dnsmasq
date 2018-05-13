@@ -78,7 +78,7 @@ int main (int argc, char **argv)
   sigaction(SIGTERM, &sigact, NULL);
   sigaction(SIGALRM, &sigact, NULL);
   sigaction(SIGCHLD, &sigact, NULL);
-  sigaction(SIGINT, &sigact, NULL);
+//  sigaction(SIGINT, &sigact, NULL);
   
   /* ignore SIGPIPE */
   sigact.sa_handler = SIG_IGN;
